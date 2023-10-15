@@ -1,8 +1,18 @@
 <script setup lang="ts">
 import RemoteJobsFilter from "./RemoteJobsFilter.vue";
 import RemoteJobsCard from "./RemoteJobsCard.vue";
-import { type Job } from "./RemoteJobsCard.vue";
 import { ref, onBeforeMount } from "vue";
+
+export interface Job {
+  jobTitleText: string;
+  companyName: string;
+  companyLogoUrl: string;
+  locationName: string;
+  annualWage: number;
+  rating: number;
+  payPeriod: string;
+  payCurrency: string;
+}
 
 const jobsArr = ref<Job[]>([]);
 

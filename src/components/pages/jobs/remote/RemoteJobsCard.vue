@@ -2,17 +2,7 @@
 import { ref } from "vue";
 import Icon from "../../../ui/Icon.vue";
 import Tag from "../../../ui/Tag.vue";
-
-export interface Job {
-  jobTitleText: string;
-  companyName: string;
-  companyLogoUrl: string;
-  locationName: string;
-  annualWage: number;
-  rating: number;
-  payPeriod: string;
-  payCurrency: string;
-}
+import { type Job } from "./RemoteJobsPage.vue";
 
 const props = defineProps<{
   job: Job;
