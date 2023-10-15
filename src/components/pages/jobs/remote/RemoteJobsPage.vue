@@ -1,8 +1,10 @@
-<script setup>
+<script setup lang="ts">
 import RemoteJobsFilter from "./RemoteJobsFilter.vue";
+import RemoteJobsCard from "./RemoteJobsCard.vue";
+import { type Job } from "./RemoteJobsCard.vue";
 import { ref, onBeforeMount } from "vue";
 
-const jobsArr = ref([]);
+const jobsArr = ref<Job[]>([]);
 
 onBeforeMount(async () => {
   const res = await fetch(
@@ -34,6 +36,9 @@ onBeforeMount(async () => {
       <div class="jobsListing">
         <div class="jobsListingHeader">
           <span class="jobsCounter">{{ jobsArr.length }} jobs</span>
+        </div>
+        <div class="jobsListWrapper">
+          <RemoteJobsCard v-for="job in jobsArr" :job="job" />
         </div>
       </div>
     </div>
@@ -95,5 +100,17 @@ onBeforeMount(async () => {
 .jobsCounter {
   color: var(--subtitle-gray);
   font-weight: 500;
+}
+
+.jobsListing {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.jobsListWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
 }
 </style>

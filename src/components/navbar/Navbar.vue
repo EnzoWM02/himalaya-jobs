@@ -1,4 +1,5 @@
-<script setup>
+<script setup lang="ts">
+import Icon from "../ui/Icon.vue";
 import HimalayaLogo from "./HimalayaLogo.vue";
 </script>
 
@@ -9,11 +10,11 @@ import HimalayaLogo from "./HimalayaLogo.vue";
       <ul class="navbarOptions">
         <li>
           Jobs
-          <span class="material-symbols-outlined"> expand_more </span>
+          <Icon icon="expand_more" />
         </li>
         <li>
           Companies
-          <span class="material-symbols-outlined"> expand_more </span>
+          <Icon icon="expand_more" />
         </li>
         <li>Pricing</li>
         <li>Advice</li>

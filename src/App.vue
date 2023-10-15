@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 import "./styles/Vars.css";
 import "./styles/Reset.css";
 import Navbar from "./components/navbar/Navbar.vue";
