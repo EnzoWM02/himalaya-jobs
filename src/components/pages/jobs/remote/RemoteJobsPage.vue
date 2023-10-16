@@ -4,6 +4,8 @@ import RemoteJobsCard from "@/components/pages/jobs/remote/RemoteJobsCard.vue";
 import { ref, onBeforeMount } from "vue";
 import Icon from "@/components/ui/Icon.vue";
 import Tag from "@/components/ui/Tag.vue";
+import ComboBox from "@/components/ui/ComboBox.vue";
+import ComboBoxOption from "@/components/ui/ComboBoxOption.vue";
 
 export interface Job {
   jobTitleText: string;
@@ -51,6 +53,18 @@ onBeforeMount(async () => {
       <div class="jobsListing">
         <div class="jobsListingHeader">
           <span class="jobsCounter">{{ jobsArr.length }} jobs</span>
+          <div>
+            <ComboBox>
+              <ComboBoxOption value="recent"> Most Recent </ComboBoxOption>
+              <ComboBoxOption value="high_paying">
+                Highest Paying
+              </ComboBoxOption>
+              <ComboBoxOption value="low_paying"> Lower Paying </ComboBoxOption>
+              <ComboBoxOption value="high_rating">
+                Highest Rating
+              </ComboBoxOption>
+            </ComboBox>
+          </div>
         </div>
         <div class="jobsListWrapper">
           <RemoteJobsCard v-for="job in jobsArr" :job="job" />

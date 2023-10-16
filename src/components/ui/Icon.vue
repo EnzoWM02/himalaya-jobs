@@ -4,7 +4,7 @@ const props = defineProps<{
 }>();
 </script>
 <template>
-  <span class="icon material-symbols-outlined">
+  <i class="icon material-symbols-outlined">
     {{ props.icon }}
-  </span>
+  </i>
 </template>

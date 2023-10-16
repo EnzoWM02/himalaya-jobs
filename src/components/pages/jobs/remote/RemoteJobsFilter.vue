@@ -1,6 +1,6 @@
 <template>
   <div class="remoteJobsFilterWrapper">
-    <span>enzooo</span>
+    <span>Filters here</span>
   </div>
 </template>
 
