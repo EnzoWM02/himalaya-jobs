@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import { ref } from "vue";
-import Icon from "../../../ui/Icon.vue";
-import Tag from "../../../ui/Tag.vue";
-import { type Job } from "./RemoteJobsPage.vue";
+import Icon from "@/components/ui/Icon.vue";
+import Tag from "@/components/ui/Tag.vue";
+import { type Job } from "@/components/pages/jobs/remote/RemoteJobsPage.vue";
 
 const props = defineProps<{
   job: Job;

@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import "./styles/Vars.css";
 import "./styles/Reset.css";
-import Navbar from "./components/navbar/Navbar.vue";
-import RemoteJobs from "./components/pages/jobs/remote/RemoteJobsPage.vue";
+import Navbar from "@/components/navbar/Navbar.vue";
+import RemoteJobs from "@/components/pages/jobs/remote/RemoteJobsPage.vue";
 </script>
 
 <template>

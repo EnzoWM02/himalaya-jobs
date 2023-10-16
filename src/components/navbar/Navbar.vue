@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import Icon from "../ui/Icon.vue";
+import Icon from "@/components/ui/Icon.vue";
 import HimalayaLogo from "./HimalayaLogo.vue";
 </script>
 
