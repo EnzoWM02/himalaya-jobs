@@ -1,5 +1,7 @@
 # himalaya-jobs
 
+Original design can be found at [Dribble](https://dribbble.com/shots/16032266-himalayas-app-filtering-2-0)
+
 ## Project Setup
 
 First, you need to have Node and Git installed in your machine, the latest version is recommended
